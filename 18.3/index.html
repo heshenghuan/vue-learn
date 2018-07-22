@@ -1,0 +1,33 @@
+<!-- ******************************************
+*  Author : Heshenghuan   
+*  Created On : Sun Jul 22 2018
+*  File : index.html
+******************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Heshenghuan">
+    <title>Vue.js #18.3 学习</title>
+    <style>
+        .active {
+            background: #aa1100
+        }
+    </style>
+</head>
+
+<body>
+    <div id='app'>
+        <a :class='{active: isActive}' :href='url'>
+            <p v-if='showImg'><img :src='img'></p>
+            <span v-if='!showImg'>点我跳转</span>
+        </a>
+        <button v-on:click='change'>{{text}}</button>
+    </div>
+    <script src="../lib/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
