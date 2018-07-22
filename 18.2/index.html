@@ -1,0 +1,24 @@
+<!-- ******************************************
+*  Author : Heshenghuan   
+*  Created On : Sun Jul 22 2018
+*  File : index.html
+******************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Heshenghuan">
+    <title>#[[$Title$]]#</title>
+</head>
+
+<body>
+    <div id="app">
+        <li v-for="food in foodList">{{food.name}}: $ {{food.discount ? food.discount * food.price : food.price}}</li>
+    </div>
+    <script src="../lib/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
