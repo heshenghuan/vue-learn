@@ -21,8 +21,10 @@
 <body>
     <div id='app'>
         <a :class='{active: isActive}' :href='url'>
-            <p v-if='showImg'><img :src='img'></p>
-            <span v-if='!showImg'>点我跳转</span>
+            <p v-if='showImg'>
+                <img :src='img'>
+            </p>
+            <p v-if='!showImg'>点我跳转</p>
         </a>
         <button v-on:click='change'>{{text}}</button>
     </div>
