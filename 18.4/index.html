@@ -1,0 +1,28 @@
+<!-- ******************************************
+*  Author : Heshenghuan   
+*  Created Sat Aug 04 2018
+*  File : index.html
+******************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Heshenghuan">
+    <title>Vue.js #18.4 学习</title>
+</head>
+
+<body>
+    <div id='app'>
+        <button v-on="{click: clicked, mouseenter: onEnter, mouseleave: onLeave}">{{text}}</button>
+        <form v-on:submit.prevent="onSubmit()">
+            <input type="text">
+            <button type="submit">提交</button>
+        </form>
+    </div>
+    <script src="../lib/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
